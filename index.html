@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Café | Un momento para ti</title>
+    <meta name="description" content="Descubre el café y los sabores de NOVA Café.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="encabezado">
+        <a class="logo" href="#inicio">
+            <img src="Imagenes/logo.png" alt="Taza de café">
+            NOVA<span> Café</span>
+        </a>
+
+        <nav>
+            <a href="#menu">Menú</a>
+            <a href="#historia">Nuestra historia</a>
+            <a href="#ubicacion">Ubicación</a>
+        </nav>
+
+        <a class="carrito" href="#menu">
+            Mi pedido (<span id="contador">0</span>)
+        </a>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-contenido">
+                <p class="etiqueta">CAFÉ · CALMA · BUENOS MOMENTOS</p>
+                <h1>Un buen café.<br>Un mejor momento.</h1>
+                <p>
+                    Café preparado con cariño, sabores que reconfortan
+                    y un espacio para disfrutar sin prisa.
+                </p>
+                <a class="boton" href="#menu">Descubrir el menú</a>
+            </div>
+        </section>
+
+        <section class="seccion menu" id="menu">
+            <p class="etiqueta">HECHO PARA DISFRUTAR</p>
+            <h2>Nuestro menú</h2>
+            <p class="descripcion">
+                Pequeños placeres para acompañar tu día.
+            </p>
+
+            <div class="productos">
+
+                <article class="producto">
+                    <div class="producto-imagen cafe" aria-hidden="true">☕</div>
+                    <div class="producto-info">
+                        <h3>Latte de la casa</h3>
+                        <p>Espresso con leche cremosa.</p>
+                        <div class="producto-pie">
+                            <strong>Q22.00</strong>
+                            <button class="agregar" data-nombre="Latte de la casa"
+                                data-precio="22">Agregar +</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="producto-imagen frio" aria-hidden="true">🧋</div>
+                    <div class="producto-info">
+                        <h3>Café frío</h3>
+                        <p>Café suave servido con hielo.</p>
+                        <div class="producto-pie">
+                            <strong>Q25.00</strong>
+                            <button class="agregar" data-nombre="Café frío"
+                                data-precio="25">Agregar +</button>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="producto">
+                    <div class="producto-imagen postre" aria-hidden="true">🍰</div>
+                    <div class="producto-info">
+                        <h3>Pastel de chocolate</h3>
+                        <p>Un dulce descanso para tu día.</p>
+                        <div class="producto-pie">
+                            <strong>Q28.00</strong>
+                            <button class="agregar" data-nombre="Pastel de chocolate"
+                                data-precio="28">Agregar +</button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="seccion historia" id="historia">
+            <p class="etiqueta">MÁS QUE CAFÉ</p>
+            <h2>Un lugar para bajar el ritmo</h2>
+            <p>
+                NOVA Café nació como una idea: crear un rincón acogedor
+                donde cada taza invite a conversar, descansar y disfrutar
+                de las cosas sencillas.
+            </p>
+        </section>
+
+        <section class="seccion ubicacion" id="ubicacion">
+            <p class="etiqueta">VEN A CONOCERNOS</p>
+            <h2>Te esperamos</h2>
+            <p>Zona 1, Ciudad de Guatemala</p>
+            <p class="nota">Ubicación ficticia para este proyecto de práctica.</p>
+        </section>
+
+        <section class="seccion resumen" id="pedido">
+            <h2>Tu pedido</h2>
+            <ul id="lista-pedido">
+                <li>Aún no has agregado productos.</li>
+            </ul>
+            <p class="total">Total: <strong id="total">Q0.00</strong></p>
+            <button id="vaciar" class="boton-secundario">
+                Vaciar pedido
+            </button>
+            <p id="mensaje" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 NOVA Café · Proyecto de práctica</p>
+    </footer>
+
+</body>
+</html>
